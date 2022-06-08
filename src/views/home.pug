@@ -1,0 +1,7 @@
+extends base
+include mixins/wordList
+block content 
+    each info in wordLists 
+        +wordList(info)
+    else 
+        li NO WORD
